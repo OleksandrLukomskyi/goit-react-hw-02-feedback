@@ -8,7 +8,7 @@ export class Section extends Component {
       const { good, neutral, bad, total, positivePercentage, onLeaveFeedback } = this.props;
    return ( 
       <div className={css.sectionBloc}>
-<FeedbackOptions  onLeaveFeedback={onLeaveFeedback}/>
+<FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={onLeaveFeedback}/>
 <Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positivePercentage}/>
  </div>  )}
 }
